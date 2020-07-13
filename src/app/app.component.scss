@@ -1,0 +1,111 @@
+.content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;  
+    margin: 82px auto 32px;  
+    max-width: 960px;
+    padding: 0 16px;
+}
+
+.title, .button {
+    background-color: #1976d2;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    justify-content: center;
+    padding: 16px;    
+}
+
+.button {
+    cursor: pointer;
+
+    &:hover {
+        background-color: ( lighten( #1976d2, 10%));
+    }
+}
+
+.puzzle-container {
+    background-color: lightgrey;
+    border: 5px solid;
+    height: 400px;
+    margin: 50px 100px 10px;
+    position: relative;
+    width: 400px;
+
+}
+
+.puzzle-piece {
+    background-size: 100px 100px;
+    box-shadow: 1px 1px lightgrey;
+    cursor: pointer;
+    font-size: 10px;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100px;
+}
+
+.piece-1 { 
+    background-image: url('../assets/puzzle/image_part_001.jpg');
+}
+
+.piece-2 {
+    background-image: url('../assets/puzzle/image_part_002.jpg');
+}
+
+.piece-3 { 
+    background-image: url('../assets/puzzle/image_part_003.jpg');
+}
+
+.piece-4 {
+    background-image: url('../assets/puzzle/image_part_004.jpg');
+}
+
+.piece-5 { 
+    background-image: url('../assets/puzzle/image_part_005.jpg');
+}
+
+.piece-6 {
+    background-image: url('../assets/puzzle/image_part_006.jpg');
+}
+
+.piece-7 { 
+    background-image: url('../assets/puzzle/image_part_007.jpg');
+}
+
+.piece-8 {
+    background-image: url('../assets/puzzle/image_part_008.jpg');
+}
+
+.piece-9 { 
+    background-image: url('../assets/puzzle/image_part_009.jpg');
+}
+
+.piece-10 {
+    background-image: url('../assets/puzzle/image_part_010.jpg');
+}
+
+.piece-11 { 
+    background-image: url('../assets/puzzle/image_part_011.jpg');
+}
+
+.piece-12 {
+    background-image: url('../assets/puzzle/image_part_012.jpg');
+}
+
+.piece-13 { 
+    background-image: url('../assets/puzzle/image_part_013.jpg');
+}
+
+.piece-14 {
+    background-image: url('../assets/puzzle/image_part_014.jpg');
+}
+
+.piece-15 {
+    background-image: url('../assets/puzzle/image_part_015.jpg');
+}

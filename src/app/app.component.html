@@ -1,0 +1,25 @@
+<div class="content" role="main">
+  <div class="title">
+    <span>{{ title }} app is running!</span>
+  </div>
+
+  <div class="puzzle-container">
+    <div (click)="movePiece(0)" class="puzzle-piece piece-1">1</div>
+    <div (click)="movePiece(1)" class="puzzle-piece piece-2">2</div>
+    <div (click)="movePiece(2)" class="puzzle-piece piece-3">3</div>
+    <div (click)="movePiece(3)" class="puzzle-piece piece-4">4</div>
+    <div (click)="movePiece(4)" class="puzzle-piece piece-5">5</div> 
+    <div (click)="movePiece(5)" class="puzzle-piece piece-6">6</div>
+    <div (click)="movePiece(6)" class="puzzle-piece piece-7">7</div>
+    <div (click)="movePiece(7)" class="puzzle-piece piece-8">8</div>
+    <div (click)="movePiece(8)" class="puzzle-piece piece-9">9</div>
+    <div (click)="movePiece(9)" class="puzzle-piece piece-10">10</div>
+    <div (click)="movePiece(10)" class="puzzle-piece piece-11">11</div>
+    <div (click)="movePiece(11)" class="puzzle-piece piece-12">12</div>
+    <div (click)="movePiece(12)" class="puzzle-piece piece-13">13</div>
+    <div (click)="movePiece(13)" class="puzzle-piece piece-14">14</div>
+    <div (click)="movePiece(14)" class="puzzle-piece piece-15">15</div>
+  </div>
+  <button (click)="shuffle()" class="button">shuffle</button>  
+</div>
+<router-outlet></router-outlet>
