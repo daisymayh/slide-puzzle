@@ -182,15 +182,21 @@ export class AppComponent {
     }
   }
 
-  showSolution() {
+  complete = false;
+
+  isSolved() {
     if (this.emptyTile.position !== 16) return false;
     let i = 0;
     do {
-      return true;
+      this.complete = true;
     } 
     while(this.tiles[i].tileNumber !== this.tiles[i].position) {
       i++;
     }
+  }
+
+  stop() {
+    this.complete = false;
   }
   
   resetPositions() {
@@ -228,7 +234,7 @@ export class AppComponent {
     this.tiles[pieceNumber].left = emptyLeft;
     this.tiles[pieceNumber].position = emptyPosition;  
 
-    this.showSolution();
+    this.isSolved();
   }
 
   isPieceMovable(pieceNumber: number) {
@@ -244,15 +250,21 @@ export class AppComponent {
 
   
   shuffle() {
+    if (this.complete = true) {
+      this.complete = false;
+    }
     let shuffleTimeouts = [];
     let shuffleDelay = 200;
     this.shuffleLoop();
 
     let shuffleCounter = 0;
     while (shuffleCounter < 20) {
-      shuffleDelay += 200;
-      // shuffleTimeouts.push(setTimeout(this.shuffleLoop, shuffleDelay));
-      this.shuffleLoop();
+      shuffleDelay += 100;
+      setTimeout(()=>{  
+        this.shuffleLoop()
+     }, shuffleDelay);
+    
+      // this.shuffleLoop();
       shuffleCounter++;
     }
   }
